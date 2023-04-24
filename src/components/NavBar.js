@@ -1,5 +1,4 @@
 // nav bar goes here :)
-
 function NavBar () {
     return (
 
