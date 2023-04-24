@@ -13,7 +13,7 @@ function Search() {
   return (
     <div>
       <input type="text" value={searchTerm} onChange={handleInputChange} />
-      <CatList searchTerm={searchTerm} />
+      {/* <CatList searchTerm={searchTerm} /> */}
     </div>
   );
 }
