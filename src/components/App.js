@@ -2,7 +2,8 @@ import React from "react";
 import NavBar from "./NavBar";
 import CatHomepage from "./CatHomepage";
 import RenderedCats from "./RenderedCats";
-import { Route, Switch } from "react-router-dom"
+import CatSearchFilter from "./CatSearchFilter";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
         <Route exact path="/">
           <CatHomepage />
         </Route>
-        <Route>
+        <Route path="/search-filter">
+          <CatSearchFilter />
+        </Route>
+        <Route path="/cats">
           <RenderedCats />
         </Route>
       </Switch>
