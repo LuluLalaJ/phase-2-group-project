@@ -1,21 +1,28 @@
-// rendering cat information here
-// this is where the API information will be fetched to
-import CatCard from "./CatCard";
+import ShowCats from "./ShowCats";
+import { Route,NavLink } from "react-router-dom"
 
 function CatList(props) {
   const {breeds} = props
 
-  const renderCatBreeds = breeds.map( breed =>
-      <CatCard
-        key={breed.id}
-        breed={breed}
-      />
-    )
+  const renderCatBreedList = breeds.map( breed =>
+    <li key={breed.id}>
+      <NavLink to={`/breeds/` + breed.id}>{breed.name}</NavLink>
+    </li>
+  )
+
 
     return (
       <div>
-        <h1>HELLO FROM CATLIST</h1>
-        {renderCatBreeds}
+        <Route exact path="/breeds/">
+          <h1>Choose a breed from below</h1>
+        </Route>
+        <ul>
+          <h3>Cat Breeds</h3>
+          {renderCatBreedList}
+        </ul>
+        <Route path="/breeds/:breedId">
+          <ShowCats breeds={breeds} />
+        </Route>
       </div>
 
     );

@@ -12,7 +12,7 @@ function App() {
         <Route exact path="/">
           <CatHomepage />
         </Route>
-        <Route>
+        <Route path="/breeds">
           <RenderedCats />
         </Route>
       </Switch>
