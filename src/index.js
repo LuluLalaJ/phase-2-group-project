@@ -5,9 +5,11 @@ import App from './components/App';
 import { BrowserRouter } from 'react-router-dom';
 
 function Root() {
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  return(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

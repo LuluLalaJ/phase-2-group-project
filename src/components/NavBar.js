@@ -1,9 +1,13 @@
-// nav bar goes here :)
+import { NavLink } from 'react-router-dom';
+
 function NavBar () {
     return (
+        <div>
+            <NavLink exact to="/">
+                Home/Logo
+            </NavLink>
 
-        <h1>Hello from NavBar</h1>
-
+        </div>
     )
 }
 
