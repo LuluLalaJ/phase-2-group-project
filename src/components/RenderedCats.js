@@ -17,7 +17,6 @@ function RenderedCats() {
 
   return (
       <div>
-        <h1>HELLO FROM RENDEREDCATS</h1>
         <CatList breeds={breeds} />
         <CatSearchFilter />
         <Favorites />

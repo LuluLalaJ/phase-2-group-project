@@ -16,7 +16,7 @@ function App() {
         <Route path="/search-filter">
           <CatSearchFilter />
         </Route>
-        <Route path="/cats">
+        <Route path="/breeds">
           <RenderedCats />
         </Route>
       </Switch>
