@@ -6,6 +6,5 @@ function Favorites() {
       <h1>HELLO FROM Favorites</h1>
     );
   }
-  
-  export default Favorites;
-  
+
+export default Favorites;

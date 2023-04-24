@@ -5,6 +5,5 @@ function CatHomepage() {
       <h1>HELLO FROM CATHOMEPAGE</h1>
     );
   }
-  
-  export default CatHomepage;
-  
+
+export default CatHomepage;

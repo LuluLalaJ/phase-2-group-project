@@ -5,6 +5,5 @@ function Filter() {
       <h1>HELLO FROM Filter</h1>
     );
   }
-  
-  export default Filter;
-  
+
+export default Filter;

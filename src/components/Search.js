@@ -5,6 +5,5 @@ function Search() {
       <h1>HELLO FROM Search</h1>
     );
   }
-  
-  export default Search;
-  
+
+export default Search;

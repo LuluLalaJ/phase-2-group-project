@@ -1,11 +1,16 @@
 // the list of cats that will display when the user activates a filter
 // the list of cats that will display when the user searches for cats
+import Filter from "./Filter";
+import Search from "./Search";
 
 function CatSearchFilter() {
     return (
-      <h1>HELLO FROM CatSearchFilter</h1>
+      <div>
+        <h1>HELLO FROM CatSearchFilter</h1>
+        <Filter />
+        <Search />
+      </div>
     );
   }
-  
-  export default CatSearchFilter;
-  
+
+export default CatSearchFilter;

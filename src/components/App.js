@@ -1,8 +1,16 @@
-// import React from 'react';
+import React from "react";
+import NavBar from "./NavBar";
+import CatHomepage from "./CatHomepage";
+import RenderedCats from "./RenderedCats";
 
 function App() {
   return (
-    <h1>HELLO FROM APP</h1>
+    <div>
+      <h1>HELLO FROM APP</h1>
+      <NavBar />
+      <CatHomepage />
+      <RenderedCats /> 
+    </div>
   );
 }
 

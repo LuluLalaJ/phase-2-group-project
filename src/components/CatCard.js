@@ -5,6 +5,5 @@ function CatCard() {
       <h1>HELLO FROM CATCARD</h1>
     );
   }
-  
-  export default CatCard;
-  
+
+export default CatCard;
