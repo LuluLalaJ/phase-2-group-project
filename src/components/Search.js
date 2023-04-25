@@ -1,14 +1,18 @@
 // search functionality goes here
 import React, { useState } from "react";
 
-function Search() {
-  // function handleInputChange(event) {
-  //   setSearchTerm(event.target.value);
-  // }
+function Search(props) {
+  const { searchTerm, searchBreed} = props
+
+  function handleInputChange(event) {
+      const term = event.target.value
+      searchBreed(term)
+    }
 
   return (
     <div>
-      {/* <input type="text" value={searchTerm} onChange={handleInputChange} /> */}
+      Search Bar: 
+      <input type="text" value={searchTerm} onChange={handleInputChange} />
     </div>
   );
 }

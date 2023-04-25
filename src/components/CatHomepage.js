@@ -1,8 +1,7 @@
-// the default page when app is opened
-
 function CatHomepage() {
     return (
-      <h1>HELLO FROM CATHOMEPAGE</h1>
+      <h1>You are Purffect</h1>
+      //maybe we can add some styling here and cute pictures of cats 
     );
   }
 
