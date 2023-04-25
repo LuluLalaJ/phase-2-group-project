@@ -1,10 +1,12 @@
-// actual block of the cat (think hog lab where each hog has a section for itself)
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { FavoriteContext } from "../context/FavoriteContext";
+
 // import { apiKey } from "./Key"
 //TO-DO: add default image when image is not fetched
 
 function CatCard(props) {
   const { breed } = props
+  const { addFavoriteBreeds } = useContext(FavoriteContext)
 
 
   const apiKey = "live_r3WyRPywctETHObbk4mYZUBbhyehNrYxzTUdGqVzi2zeJMouvxB3V9MMOpIBLXQ5"
@@ -31,6 +33,7 @@ function CatCard(props) {
     5: "🐱🐱🐱🐱🐱"
   }
 
+
   return (
     breed ?
       <div>
@@ -45,7 +48,7 @@ function CatCard(props) {
           <li>Energy Level: {rating[breed.energy_level]}</li>
           <li>Shedding Level: {rating[breed.shedding_level]}</li>
         </ul>
-        <button onClick={null}>Add to favorites</button>
+        <button onClick={() => addFavoriteBreeds(breed, catImg)}>Add to favorites</button>
       </div>
     : null
     );

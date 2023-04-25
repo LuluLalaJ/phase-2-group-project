@@ -4,6 +4,7 @@ import CatHomepage from "./CatHomepage";
 import RenderedCats from "./RenderedCats";
 import { Route, Switch } from "react-router-dom";
 import Favorites from "./Favorites";
+import { FavoriteProvider } from "../context/FavoriteContext";
 
 function App() {
   const [searchHidden, setSearchHidden] = useState(false)
@@ -23,13 +24,15 @@ function App() {
           <CatHomepage />
         </Route>
 
-        <Route path="/breeds">
-          <RenderedCats searchHidden={searchHidden} filterHidden={filterHidden}/>
-        </Route>
+        <FavoriteProvider>
+          <Route path="/breeds">
+            <RenderedCats searchHidden={searchHidden} filterHidden={filterHidden}/>
+          </Route>
 
-        <Route path="/favorites">
-          <Favorites />
-        </Route>
+          <Route path="/favorites">
+            <Favorites />
+          </Route>
+        </FavoriteProvider>
       </Switch>
     </div>
   );

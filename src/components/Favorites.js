@@ -1,22 +1,21 @@
 //run  json-server --watch db.json --port 8000
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import Favorite from './Favorite'
+import { FavoriteContext } from "../context/FavoriteContext";
 
 function Favorites() {
-  const [favs, setFavs] = useState([])
-  const favUrl = "http://localhost:8000/favBreeds"
+  const { favorites, setFavorites, favoriteUrl } = useContext(FavoriteContext)
 
   useEffect(() => {
-    fetch(favUrl)
+    fetch(favoriteUrl)
     .then(r => r.json())
-    .then(data => setFavs(data))
-  },[])
+      .then(data => setFavorites(data))
+  }, [])
 
-  const renderFavs = favs.map( fav =>
+  const renderFavs = favorites.map( fav =>
     <Favorite key={fav.id} fav={fav}/>
   )
-
 
   return (
       <div>

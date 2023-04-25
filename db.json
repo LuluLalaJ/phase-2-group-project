@@ -1,10 +1,16 @@
 {
-    "favBreeds": [
-        {
-            "id": 1,
-            "breedId": "abys",
-            "name": "Abyssinian",
-            "image": "https://cdn2.thecatapi.com/images/EHG3sOpAM.jpg"
-        }
-    ]
+  "favBreeds": [
+    {
+      "id": 1,
+      "breedId": "abys",
+      "name": "Abyssinian",
+      "image": "https://cdn2.thecatapi.com/images/EHG3sOpAM.jpg"
+    },
+    {
+      "breedId": "asho",
+      "name": "American Shorthair",
+      "image": "https://cdn2.thecatapi.com/images/JFPROfGtQ.jpg",
+      "id": 2
+    }
+  ]
 }
