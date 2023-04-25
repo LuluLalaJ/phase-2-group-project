@@ -19,6 +19,9 @@ function RenderedCats() {
     setSearchTerm(breed)
   }
 
+  function filterCatByTraits(traits) {
+    console.log(traits)
+  }
   const filteredBreeds = breeds.filter((breed) => {
     if (searchTerm) {
       return breed.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -30,7 +33,7 @@ function RenderedCats() {
   return (
       <div>
         <CatList breeds={filteredBreeds} />
-        <Filter />
+        <Filter filterCatByTraits={filterCatByTraits}/>
         <Search searchTerm={searchTerm} searchBreed={searchBreed}/>
       </div>
     );
