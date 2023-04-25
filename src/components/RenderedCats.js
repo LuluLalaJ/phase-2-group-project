@@ -8,6 +8,7 @@ function RenderedCats() {
   const breedsUrl = "https://api.thecatapi.com/v1/breeds/"
   const [breeds, setBreeds] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
+  const [traits, setTraits] = useState([])
 
   useEffect(() => {
     fetch(breedsUrl)
@@ -19,22 +20,34 @@ function RenderedCats() {
     setSearchTerm(breed)
   }
 
-  function filterCatByTraits(traits) {
-    console.log(traits)
+  function filterCatByTraits(traitsObj) {
+    const updatedTraits = []
+    for (const trait in traitsObj) {
+      if (traitsObj[trait]) {
+        updatedTraits.push(trait)
+      }
+    }
+    setTraits(updatedTraits)
   }
-  const filteredBreeds = breeds.filter((breed) => {
+
+  const displayedBreeds = breeds
+  .filter((breed) => {
     if (searchTerm) {
       return breed.name.toLowerCase().includes(searchTerm.toLowerCase());
     } else {
       return true;
     }
-  });
+  }).filter(breed => {
+    if (traits.length !== 0) {
+    }
+    return true
+  })
 
   return (
       <div>
-        <CatList breeds={filteredBreeds} />
-        <Filter filterCatByTraits={filterCatByTraits}/>
-        <Search searchTerm={searchTerm} searchBreed={searchBreed}/>
+      <Filter filterCatByTraits={filterCatByTraits} />
+      <Search searchTerm={searchTerm} searchBreed={searchBreed} />
+      <CatList breeds={displayedBreeds} />
       </div>
     );
   }
