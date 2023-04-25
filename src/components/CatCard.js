@@ -45,6 +45,7 @@ function CatCard(props) {
           <li>Energy Level: {rating[breed.energy_level]}</li>
           <li>Shedding Level: {rating[breed.shedding_level]}</li>
         </ul>
+        <button onClick={null}>Add to favorites</button>
       </div>
     : null
     );

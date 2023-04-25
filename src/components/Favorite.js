@@ -9,6 +9,7 @@ function Favorite(props) {
         <div>
             <h2>{fav.name}</h2>
             <img src={fav.image} style={{width: 300}}></img>
+            <Link to={`/breeds/` + fav.breedId}>See breed detail</Link>
             <button>remove from favorites</button>
         </div>
     )

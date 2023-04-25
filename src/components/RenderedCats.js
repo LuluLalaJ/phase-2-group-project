@@ -16,13 +16,9 @@ function RenderedCats() {
     .then(data => setBreeds(data))
   }, [])
 
-
-
   return (
       <div>
         <CatList breeds={breeds} />
-        {/* <CatSearchFilter searchTerm={searchTerm}/> */}
-        <Favorites />
       </div>
     );
   }
