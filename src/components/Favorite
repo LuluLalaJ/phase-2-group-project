@@ -1,0 +1,11 @@
+
+
+function Favorite() {
+    return(
+        <div>
+            favBreed
+        </div>
+    )
+}
+
+export default Favorite
