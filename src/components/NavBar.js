@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({toggleSearch, toggleFilter}) {
+
   const logoUrl = 'https://cdn.dribbble.com/userupload/3679947/file/original-d28f01f029c541598daa578148346391.png?compress=1&resize=400x300&vertical=top'
   const searchLogoUrl = 'https://www.nicepng.com/png/detail/350-3506490_search-icon-small-search-icon-small-png.png'
   const filterLogoUrl = 'https://t3.ftcdn.net/jpg/04/02/77/08/360_F_402770898_3yxaOfo0e8sTJ6mgebY1KaOPcwgWKSHE.jpg'
@@ -30,23 +31,21 @@ function Navbar() {
             alt="Breeds" />
         </NavLink>
         </h1>
-        
+
         <h1 className="nav-item" style={{margin: "0 20px"}}>
-          <NavLink to="/search">
-            <img
+           <img
             style={{width: 50}}
             src={searchLogoUrl}
-            alt="Search" />
-          </NavLink>
+            alt="Search"
+            onClick={toggleSearch}/>
         </h1>
 
         <h1 className="nav-item" style={{margin: "0 15px"}}>
-          <NavLink to="/filter">
             <img
             style={{width: 100}}
             src={filterLogoUrl}
-            alt="Filter" />
-          </NavLink>
+            alt="Filter"
+            onClick={toggleFilter}/>
         </h1>
 
         <h1 className="nav-item" style={{margin: "0 10px"}}>

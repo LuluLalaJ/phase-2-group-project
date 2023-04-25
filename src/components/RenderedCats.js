@@ -4,11 +4,12 @@ import CatList from "./CatList";
 import Filter from './Filter';
 import Search from './Search'
 
-function RenderedCats() {
+function RenderedCats(props) {
   const breedsUrl = "https://api.thecatapi.com/v1/breeds/"
   const [breeds, setBreeds] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
   const [traits, setTraits] = useState([])
+  const { searchHidden, filterHidden } = props
 
   useEffect(() => {
     fetch(breedsUrl)
@@ -49,8 +50,8 @@ function RenderedCats() {
 
   return (
       <div>
-      <Filter filterCatByTraits={filterCatByTraits} />
-      <Search searchTerm={searchTerm} searchBreed={searchBreed} />
+      {filterHidden ? <Filter filterCatByTraits={filterCatByTraits} /> : null}
+      {searchHidden ? <Search searchTerm={searchTerm} searchBreed={searchBreed} /> : null}
       <CatList breeds={displayedBreeds} />
       </div>
     );
