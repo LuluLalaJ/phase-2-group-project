@@ -8,7 +8,7 @@ import Favorites from "./Favorites";
 function RenderedCats() {
   const breedsUrl = "https://api.thecatapi.com/v1/breeds/"
   const [breeds, setBreeds] = useState([])
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     fetch(breedsUrl)
@@ -21,7 +21,7 @@ function RenderedCats() {
   return (
       <div>
         <CatList breeds={breeds} />
-        <CatSearchFilter searchTerm={searchTerm}/>
+        {/* <CatSearchFilter searchTerm={searchTerm}/> */}
         <Favorites />
       </div>
     );
