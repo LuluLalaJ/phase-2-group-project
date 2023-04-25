@@ -39,6 +39,10 @@ function RenderedCats() {
     }
   }).filter(breed => {
     if (traits.length !== 0) {
+      for (const trait of traits) {
+        if (breed[trait] <=3)
+          return false
+     }
     }
     return true
   })
