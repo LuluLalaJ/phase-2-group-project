@@ -1,0 +1,10 @@
+{
+    "favBreeds": [
+        {
+            "id": 1,
+            "breedId": "abys",
+            "name": "Abyssinian",
+            "image": "https://cdn2.thecatapi.com/images/EHG3sOpAM.jpg"
+        }
+    ]
+}

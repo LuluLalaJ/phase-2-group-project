@@ -21,6 +21,7 @@ function Navbar() {
           BREEDS
           {/* replace with icon? */}
       </NavLink>
+
       <ul className="navbar-nav" style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 0, padding: 0}}>
         <h1 className="nav-item" style={{margin: "0 10px"}}>
           <NavLink to="/search">
@@ -38,6 +39,10 @@ function Navbar() {
             alt="Filter" />
           </NavLink>
         </h1>
+        <NavLink to="/favorites" >
+          FAVORITES
+          {/* replace with icon? */}
+        </NavLink>
       </ul>
     </nav>
   );

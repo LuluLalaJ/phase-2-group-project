@@ -1,5 +1,5 @@
 import ShowCats from "./ShowCats";
-import { Route,NavLink } from "react-router-dom"
+import { Route, NavLink } from "react-router-dom"
 
 function CatList(props) {
   const {breeds} = props
