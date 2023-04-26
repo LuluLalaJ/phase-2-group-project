@@ -18,12 +18,11 @@ function Favorites() {
   )
 
   return (
-      <div>
-        <h1>Here are your favorite cats</h1>
-        {renderFavs}
-      </div>
-
-    );
-  }
+    <div style={{ textAlign: 'center' }}>
+      <h1>Here are your favorite cats</h1>
+      {renderFavs}
+    </div>
+  );
+}
 
 export default Favorites;
