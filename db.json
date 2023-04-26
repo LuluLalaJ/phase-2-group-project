@@ -1,16 +1,16 @@
 {
   "favBreeds": [
     {
-      "breedId": "rblu",
-      "name": "Russian Blue",
-      "image": "https://cdn2.thecatapi.com/images/S-1YzA7-_.jpg",
+      "breedId": "abob",
+      "name": "American Bobtail",
+      "image": "https://cdn2.thecatapi.com/images/vH0bd0YDH.jpg",
       "id": 1
     },
     {
-      "breedId": "sfol",
-      "name": "Scottish Fold",
-      "image": "https://cdn2.thecatapi.com/images/OlCMYSMZD.jpg",
-      "id": 2
+      "breedId": "tang",
+      "name": "Turkish Angora",
+      "image": "https://cdn2.thecatapi.com/images/41Fe8q9vU.jpg",
+      "id": 3
     }
   ]
 }
