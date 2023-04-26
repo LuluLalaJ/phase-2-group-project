@@ -7,7 +7,13 @@ export const FavoriteProvider = props => {
     const favoriteUrl = "http://localhost:8000/favBreeds/"
 
     function addFavoriteBreeds(breed, imgByBreedUrl) {
-        //NEED TO ADD CONDITION TO PREVENT REPEATING BREEDS!!
+        // Check if the breed is already in the favorites list
+        for (let i = 0; i < favorites.length; i++) {
+          if (favorites[i].breedId === breed.id) {
+            // Breed is already in the favorites list, so exit the function
+            return;
+          }
+        }
         const favObj = {
             breedId: breed.id,
             name: breed.name,

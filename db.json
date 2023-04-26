@@ -1,15 +1,15 @@
 {
   "favBreeds": [
     {
-      "id": 1,
-      "breedId": "abys",
-      "name": "Abyssinian",
-      "image": "https://cdn2.thecatapi.com/images/EHG3sOpAM.jpg"
+      "breedId": "rblu",
+      "name": "Russian Blue",
+      "image": "https://cdn2.thecatapi.com/images/S-1YzA7-_.jpg",
+      "id": 1
     },
     {
-      "breedId": "asho",
-      "name": "American Shorthair",
-      "image": "https://cdn2.thecatapi.com/images/JFPROfGtQ.jpg",
+      "breedId": "sfol",
+      "name": "Scottish Fold",
+      "image": "https://cdn2.thecatapi.com/images/OlCMYSMZD.jpg",
       "id": 2
     }
   ]
