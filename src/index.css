@@ -43,3 +43,18 @@ ul {
     text-align: center;
   }
   
+
+  body.light {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+  }
+  
+  .homepage-header {
+    color: #444444; /* set the color of the header text to a dark gray */
+  }
+  

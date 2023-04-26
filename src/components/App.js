@@ -8,6 +8,7 @@ import { FavoriteProvider } from "../context/FavoriteContext";
 
 function App() {
   const [searchHidden, setSearchHidden] = useState(false)
+  
   function toggleSearch() {
     setSearchHidden(searchHidden => !searchHidden)
   }
