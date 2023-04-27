@@ -17,7 +17,7 @@ function CatList(props) {
       </Route>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>Cat Breeds</h3>
-        <ul style={{ columns: "3", listStyle: "none", textAlign: "center", margin: 0, padding: 0 }}>
+        <ul className={"breed-list"}>
           {renderCatBreedList}
         </ul>
       </div>

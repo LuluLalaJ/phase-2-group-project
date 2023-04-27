@@ -6,6 +6,7 @@ import RenderedCats from "./RenderedCats";
 import Favorites from "./Favorites";
 import { FavoriteProvider } from "../context/FavoriteContext";
 //run  json-server --watch db.json --port 8000
+//need to move all the inline stylings to the css stylesheet 
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         isDarkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
       />
-      
+
       <Switch>
         <main>
         <Route exact path="/">
