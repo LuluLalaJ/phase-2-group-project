@@ -10,21 +10,28 @@ import { FavoriteProvider } from "../context/FavoriteContext";
 
 function App() {
   const [searchHidden, setSearchHidden] = useState(false)
-
   function toggleSearch() {
     setSearchHidden(searchHidden => !searchHidden)
   }
+
   const [filterHidden, setFilterHidden] = useState(false)
   function toggleFilter() {
     setFilterHidden(filterHidden => !filterHidden)
   }
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark')
+    document.body.classList.toggle('light')
+  }
+
   return (
     <div>
-      <NavBar toggleSearch={toggleSearch} toggleFilter={toggleFilter}/>
+      <NavBar toggleSearch={toggleSearch} toggleFilter={toggleFilter} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
       <Switch>
         <Route exact path="/">
-          <CatHomepage />
+          <CatHomepage isDarkMode={isDarkMode}/>
         </Route>
 
         <FavoriteProvider>

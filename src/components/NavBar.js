@@ -7,19 +7,14 @@ import fav from '../images/fav.png'
 import breeds from '../images/breeds.png'
 
 
-function Navbar({toggleSearch, toggleFilter}) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
 
   const navLinkStyles = {
     textDecoration: 'none',
     color: 'black'
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark')
-    document.body.classList.toggle('light')
-  }
+
 
   return (
     <nav className={`navbar ${isDarkMode ? 'navbar-dark' : 'navbar-light'}`} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
