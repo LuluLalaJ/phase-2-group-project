@@ -58,6 +58,10 @@ ul {
   text-align: center;
 }
 
+main {
+  margin-top: 150px;
+}
+
 
 body.light {
   background-color: white;

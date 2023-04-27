@@ -31,19 +31,19 @@ function App() {
     <div>
       <NavBar toggleSearch={toggleSearch} toggleFilter={toggleFilter} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
       <Switch>
+        <main>
         <Route exact path="/">
           <CatHomepage isDarkMode={isDarkMode}/>
         </Route>
-
         <FavoriteProvider>
           <Route path="/breeds">
             <RenderedCats searchHidden={searchHidden} filterHidden={filterHidden}/>
           </Route>
-
           <Route path="/favorites">
             <Favorites />
           </Route>
         </FavoriteProvider>
+        </main>
       </Switch>
     </div>
   );

@@ -1,3 +1,4 @@
+//run  json-server --watch db.json --port 8000
 
 import { useEffect, useState, useContext } from 'react'
 import Favorite from './Favorite'
