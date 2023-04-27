@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../images/logo.png'
+import search from '../images/search.png'
+import filter from '../images/filter.png'
+import fav from '../images/fav.png'
+import breeds from '../images/breeds.png'
+
 
 function Navbar({toggleSearch, toggleFilter}) {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -8,12 +14,6 @@ function Navbar({toggleSearch, toggleFilter}) {
     textDecoration: 'none',
     color: 'black'
   };
-
-  const logoUrl = 'https://media.istockphoto.com/id/1097490360/vector/vector-illustration-of-cute-black-cat.jpg?s=612x612&w=0&k=20&c=Ef0qYl79aZJ6NJXJVbJ0onjXVNnSyqrN_TKPjieAIGE='
-  const searchLogoUrl = 'https://cdn.dribbble.com/users/722835/screenshots/6895075/cat.png?compress=1&resize=400x300&vertical=top'
-  const filterLogoUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYbh2t1iw2HknAjD7wd1cECpZyS3zH6VJJA&usqp=CAU'
-  const favoriteLogoUrl = 'https://i.pinimg.com/originals/89/b6/63/89b663ce2ad41e86c45c0e4443fbcf78.jpg'
-  const breedLogoUrl = 'https://i.pinimg.com/736x/3b/39/e0/3b39e012535d37820fbbd14bc8d58616.jpg'
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -29,8 +29,8 @@ function Navbar({toggleSearch, toggleFilter}) {
         <NavLink to="/" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
           <img
           style={{width: 110}}
-          src={logoUrl}
-          alt="Logo"
+          src={logo}
+          alt="logo"
           />
           <div>Home</div>
         </NavLink>
@@ -40,7 +40,7 @@ function Navbar({toggleSearch, toggleFilter}) {
           <NavLink to="/breeds" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
             <img
             style={{width: 110}}
-            src={breedLogoUrl}
+            src={breeds}
             alt="Breeds" />
             <div>Breeds</div>
         </NavLink>
@@ -49,7 +49,7 @@ function Navbar({toggleSearch, toggleFilter}) {
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
           <img
             style={{width: 145}}
-            src={searchLogoUrl}
+            src={search}
             alt="Search"
             onClick={toggleSearch}
           />
@@ -59,7 +59,7 @@ function Navbar({toggleSearch, toggleFilter}) {
         <li className="nav-item" style={{margin: "0 15px", textAlign: "center"}}>
           <img
             style={{width: 150}}
-            src={filterLogoUrl}
+            src={filter}
             alt="Filter"
             onClick={toggleFilter}
           />
@@ -71,15 +71,15 @@ function Navbar({toggleSearch, toggleFilter}) {
           <NavLink to="/favorites" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
             <img
             style={{width: 140}}
-            src={favoriteLogoUrl}
+            src={fav}
             alt="Favorites" />
             <div>Favorites</div>
         </NavLink>
         </li>
-        
+
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
-          <button 
-            onClick={toggleDarkMode} 
+          <button
+            onClick={toggleDarkMode}
             style={{
               backgroundColor: isDarkMode ? "#1a1a1a" : "#f2f2f2",
               color: isDarkMode ? "#f2f2f2" : "#1a1a1a",
