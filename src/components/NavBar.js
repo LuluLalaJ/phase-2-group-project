@@ -11,7 +11,6 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
 
   const navLinkStyles = {
     textDecoration: 'none',
-    color: 'black'
   };
 
   return (
@@ -46,7 +45,7 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
             alt="Search"
             onClick={toggleSearch}
           />
-          <div style={{color: "black"}}>Hide/Show Search</div>
+          <div>Hide/Show Search</div>
         </li>
 
         <li className="nav-item" style={{margin: "0 15px", textAlign: "center"}}>
@@ -56,7 +55,7 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
             alt="Filter"
             onClick={toggleFilter}
           />
-          <div style={{color: "black"}}>Hide/Show Filter</div>
+          <div>Hide/Show Filter</div>
         </li>
 
 

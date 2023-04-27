@@ -25,7 +25,7 @@ function CatList(props) {
         <ShowCats breeds={breeds} />
       </Route>
     </div>
-  );
+  ); 
 }
 
 export default CatList;
