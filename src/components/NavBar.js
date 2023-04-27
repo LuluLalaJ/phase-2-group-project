@@ -17,7 +17,6 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
         <NavLink to="/" exact className = "nav-link" activeClassName = "active">
           <img
-          style={{width: 110}}
           src={logo}
           alt="logo"
           />
@@ -28,16 +27,15 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
           <NavLink to="/breeds" exact className = "nav-link" activeClassName = "active">
             <img
-            style={{width: 110}}
             src={breeds}
-            alt="Breeds" />
+            alt="Breeds"
+            />
             <div>Breeds</div>
         </NavLink>
         </li>
 
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
           <img
-            style={{width: 145}}
             src={search}
             alt="Search"
             onClick={toggleSearch}
@@ -47,7 +45,6 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
 
         <li className="nav-item" style={{margin: "0 15px", textAlign: "center"}}>
           <img
-            style={{width: 150}}
             src={filter}
             alt="Filter"
             onClick={toggleFilter}
@@ -59,7 +56,6 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
           <NavLink to="/favorites" exact className = "nav-link" activeClassName = "active">
             <img
-            style={{width: 140}}
             src={fav}
             alt="Favorites" />
             <div>Favorites</div>
