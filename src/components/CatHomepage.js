@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./CatHomepage.css"; // import a separate CSS file for styling
+import "./CatHomepage.css"; 
 
 function CatHomepage() {
   const homepageCatOneUrl = 'https://hips.hearstapps.com/hmg-prod/images/cute-photos-of-cats-curled-up-sleeping-1593184773.jpg'
