@@ -7,28 +7,16 @@ import fav from '../images/fav.png'
 import breeds from '../images/breeds.png'
 
 
-function Navbar({toggleSearch, toggleFilter}) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
 
-  const navLinkStyles = {
-    textDecoration: 'none',
-    color: 'black'
-  };
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark')
-    document.body.classList.toggle('light')
-  }
 
   return (
-    <nav className={`navbar ${isDarkMode ? 'navbar-dark' : 'navbar-light'}`} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+    <nav className={isDarkMode ? 'navbar-dark' : 'navbar-light'} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
-      <ul className="navbar-nav" style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 0, padding: 0}}>
+      <ul className="navbar-nav">
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
-        <NavLink to="/" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
+        <NavLink to="/" exact className = "nav-link" activeClassName = "active">
           <img
-          style={{width: 110}}
           src={logo}
           alt="logo"
           />
@@ -37,40 +25,37 @@ function Navbar({toggleSearch, toggleFilter}) {
         </li>
 
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
-          <NavLink to="/breeds" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
+          <NavLink to="/breeds" exact className = "nav-link" activeClassName = "active">
             <img
-            style={{width: 110}}
             src={breeds}
-            alt="Breeds" />
+            alt="Breeds"
+            />
             <div>Breeds</div>
         </NavLink>
         </li>
 
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
           <img
-            style={{width: 145}}
             src={search}
             alt="Search"
             onClick={toggleSearch}
           />
-          <div style={{color: "black"}}>Hide/Show Search</div>
+          <div>Hide/Show Search</div>
         </li>
 
         <li className="nav-item" style={{margin: "0 15px", textAlign: "center"}}>
           <img
-            style={{width: 150}}
             src={filter}
             alt="Filter"
             onClick={toggleFilter}
           />
-          <div style={{color: "black"}}>Hide/Show Filter</div>
+          <div>Hide/Show Filter</div>
         </li>
 
 
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
-          <NavLink to="/favorites" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
+          <NavLink to="/favorites" exact className = "nav-link" activeClassName = "active">
             <img
-            style={{width: 140}}
             src={fav}
             alt="Favorites" />
             <div>Favorites</div>

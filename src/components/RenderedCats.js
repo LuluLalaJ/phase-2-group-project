@@ -49,7 +49,7 @@ function RenderedCats(props) {
   })
 
   return (
-      <div>
+      <div className="cats-container">
       {filterHidden ? <Filter filterCatByTraits={filterCatByTraits} /> : null}
       {searchHidden ? <Search searchTerm={searchTerm} searchBreed={searchBreed} /> : null}
       <CatList breeds={displayedBreeds} />

@@ -11,13 +11,13 @@ function CatList(props) {
   ));
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="breeds-container" style={{ textAlign: "center" }}>
       <Route exact path="/breeds/">
         <h1>Choose a breed from below</h1>
       </Route>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>Cat Breeds</h3>
-        <ul style={{ columns: "3", listStyle: "none", textAlign: "center", margin: 0, padding: 0 }}>
+        <ul className={"breed-list"}>
           {renderCatBreedList}
         </ul>
       </div>
