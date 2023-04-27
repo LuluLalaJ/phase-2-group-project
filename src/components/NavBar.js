@@ -15,9 +15,9 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
   };
 
   return (
-    <nav className={`navbar ${isDarkMode ? 'navbar-dark' : 'navbar-light'}`} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+    <nav className={isDarkMode ? 'navbar-dark' : 'navbar-light'} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
-      <ul className="navbar-nav" style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 0, padding: 0}}>
+      <ul className="navbar-nav">
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
         <NavLink to="/" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
           <img
