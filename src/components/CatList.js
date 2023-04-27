@@ -11,7 +11,7 @@ function CatList(props) {
   ));
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="breeds-container" style={{ textAlign: "center" }}>
       <Route exact path="/breeds/">
         <h1>Choose a breed from below</h1>
       </Route>
@@ -25,7 +25,7 @@ function CatList(props) {
         <ShowCats breeds={breeds} />
       </Route>
     </div>
-  ); 
+  );
 }
 
 export default CatList;

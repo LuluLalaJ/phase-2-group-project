@@ -25,7 +25,7 @@ function Filter(props) {
   }
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div className="filter" style={{ textAlign: 'center' }}>
       <h1>Select Cat Traits</h1>
       <form onSubmit={handleSubmit}>
         <div>

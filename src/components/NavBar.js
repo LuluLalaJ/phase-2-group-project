@@ -9,16 +9,13 @@ import breeds from '../images/breeds.png'
 
 function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
 
-  const navLinkStyles = {
-    textDecoration: 'none',
-  };
 
   return (
     <nav className={isDarkMode ? 'navbar-dark' : 'navbar-light'} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
       <ul className="navbar-nav">
         <li className="nav-item" style={{margin: "0 20px", textAlign: "center"}}>
-        <NavLink to="/" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
+        <NavLink to="/" exact className = "nav-link" activeClassName = "active">
           <img
           style={{width: 110}}
           src={logo}
@@ -29,7 +26,7 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
         </li>
 
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
-          <NavLink to="/breeds" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
+          <NavLink to="/breeds" exact className = "nav-link" activeClassName = "active">
             <img
             style={{width: 110}}
             src={breeds}
@@ -60,7 +57,7 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
 
 
         <li className="nav-item" style={{margin: "0 10px", textAlign: "center"}}>
-          <NavLink to="/favorites" exact className = "nav-link" activeClassName = "active" style = {navLinkStyles}>
+          <NavLink to="/favorites" exact className = "nav-link" activeClassName = "active">
             <img
             style={{width: 140}}
             src={fav}
