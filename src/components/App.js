@@ -29,7 +29,13 @@ function App() {
 
   return (
     <div>
-      <NavBar toggleSearch={toggleSearch} toggleFilter={toggleFilter} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
+      <NavBar
+        toggleSearch={toggleSearch}
+        toggleFilter={toggleFilter}
+        isDarkMode={isDarkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
+      
       <Switch>
         <main>
         <Route exact path="/">

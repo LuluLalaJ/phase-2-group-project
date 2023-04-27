@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
   }
 
@@ -13,21 +12,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
   }
 
   .homepage-header {
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
   .homepage-header.dark{
-    font-size: 3rem;
+    font-size: 5rem;
     color: white;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
   .homepage-images {
