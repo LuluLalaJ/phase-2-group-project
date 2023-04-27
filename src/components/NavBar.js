@@ -14,8 +14,6 @@ function Navbar({toggleSearch, toggleFilter, isDarkMode, toggleDarkMode}) {
     color: 'black'
   };
 
-
-
   return (
     <nav className={`navbar ${isDarkMode ? 'navbar-dark' : 'navbar-light'}`} style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
