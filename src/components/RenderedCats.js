@@ -41,7 +41,10 @@ function RenderedCats(props) {
   }).filter(breed => {
     if (traits.length !== 0) {
       for (const trait of traits) {
-        if (breed[trait] <=3)
+        if (trait === "shedding_level" && breed[trait] > 2) {
+          return false
+        }
+        if (trait !== "shedding_level" && breed[trait] <=3)
           return false
      }
     }
