@@ -1,16 +1,10 @@
 {
   "favBreeds": [
     {
-      "breedId": "abob",
-      "name": "American Bobtail",
-      "image": "https://cdn2.thecatapi.com/images/vH0bd0YDH.jpg",
+      "breedId": "aege",
+      "name": "Aegean",
+      "image": "https://cdn2.thecatapi.com/images/Hb2N6tYTJ.jpg",
       "id": 1
-    },
-    {
-      "breedId": "tang",
-      "name": "Turkish Angora",
-      "image": "https://cdn2.thecatapi.com/images/41Fe8q9vU.jpg",
-      "id": 3
     }
   ]
 }

@@ -14,7 +14,7 @@ function Favorite(props) {
             flexDirection: 'column',
             alignItems: 'center'}}>
             <h2>{fav.name}</h2>
-            <img src={fav.image} style={{width: 300}}></img>
+            <img src={fav.image} style={{width: 300}} alt="favimg"></img>
             <div style={{
                 display: 'flex',
                 flexDirection: 'row',
