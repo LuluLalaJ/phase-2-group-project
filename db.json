@@ -1,10 +1,10 @@
 {
   "favBreeds": [
     {
-      "breedId": "aege",
-      "name": "Aegean",
-      "image": "https://cdn2.thecatapi.com/images/Hb2N6tYTJ.jpg",
-      "id": 1
+      "breedId": "jbob",
+      "name": "Japanese Bobtail",
+      "image": "https://cdn2.thecatapi.com/images/86jwAC0vv.jpg",
+      "id": 2
     }
   ]
 }

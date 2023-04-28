@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+Welcome to 'You Are Purrfect', an app where you can browse for your dream cat!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started, run the following command:
+json-server --watch db.json --port 8000
 
-## Available Scripts
+Then run your standard npm install and npm start to view the webpage!
 
-In the project directory, you can run:
+You will be sent to a default homepage, where you will see the NavBar at the top. There is also three images of some cute cats, and a button that displays 'View Breeds'. This has the same functionality as clicking the 'Breeds' icon on the NavBar, which will redirect you to an extensive list of cat breeds!
 
-### `npm start`
+On this page, you may click on a breed of your choice and be presented with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The name of the breed
+An image of that cat!
+A brief description summarizing that cat's traits
+The common temperament of the breed
+Affection Level, Child friendliness, Dog friendliness, energy level, and shedding level
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You will be able to then add that breed to your favorites if you find it desirable. You can also toggle a search bar or filter options by clicking the corresponding icons at the top!
 
-### `npm test`
+On your favorites page will be a list of your stored favorite cats. You can click 'see breed details' to be redirected back to that breed's full information card, or click 'remove' (why would you do this!) to take that cat off the array of favorites. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Finally, there is a dark mode option, also found at the NavBar.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This website is for cat enthusiasts, or people looking for their dream cat. Please remember to do further research into breeds you are interested in, and we hope you enjoy the app!
